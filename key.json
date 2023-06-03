@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "porteiroeletronico-sel0373",
+  "private_key_id": "10d00c3cef2b5e76a66b8c9217b5b84d8e41cef7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7X9cKmAyvubKN\ni/yG3gHuEGt5YhU+jieI4R1P8jh+XQ2wBgomeC8VNboHgmeEq8c1hATtLsChnhcT\n3JeIpWQpRSo8VvDi8BMzQ6L51ZsGQ6xiysRaalT7iAMLUIQ4luyU3sr833UMJPKt\n9BBmPp4x1ZdF4kRhDmCXOmv1JCOVRNsIuXUUXxUCMv6jFp1YzEoKarMqcxBjeUWv\nXWpW4iQ/rucHgc/e1oHPQzK3hIpo4mCjHqBP22z5IHWpbnSAvvNRpxq7FHfblWAb\nWhpVAvr8NdCmwuqGrtQHG8Avb5EMCnxovDVo4vrYOc7IY0rVXAwZAiPE+6OqZmcL\nT/g8AP4XAgMBAAECggEAAJpvY85XhB1R8Ni5iGmgkfalke956AinIe6vnHlIK0f7\nakyqrbMHW8cfgTSvRqMS8h4pseXLovmSU3MLXdpCd0uMtkMFZYWmWizmkm1YoW2I\nWY0TksLy4RhwAhJRSqlZu6T3/FZv1wkratn1T472DW0Fnqj61WEpeHMss85Y+vsL\nWcWqSKxf+9CeBibUQJyqcC0IUi6kJ8DE5fa0iG8QxAgeXFH1adwbbHqIVd5L3/ID\ntuU59WPT3VlZE65xEsfz+kiZAbmVCciSTw90YlN5qYhiN9iGHqucHGF9RmSYeuYI\nTxmoMuFgdCmCmz1fyujTgRtap3zgbHNjF7rR7MTD2QKBgQD3Y1FwNKzSRNKRF8l4\n69QbVxhiVIJf3TjG4eJzrlVJPA4fnenZgYdUqT8jiFp1AsAqknLL9e/FXqejQzPJ\nksPxUVSkIxC2bwVPixzNgls3IMhsbv44+7kK0Ov9hinZAQlKvRh/R59Jytca8AGR\nHDyZFXdqj/DbpiX0KOgS/vghWwKBgQDB5bC/ToSSldKrs4R2ZJNrjlo0q4WDJ7Vk\nb1OJS52ZYTCunWB5njG2wCd4QJjNhdAfH01fISgCYmdRwc778s0yPrbP/ABnMsyd\nv9gPNlBsffMnRqP6GnQ7RTsY8jm9gn8fT3jiXnFj9mCOiYrv+eN/Ok+QJda32M29\n9yMod6XW9QKBgQCRxkqEzeVQehGCQfwMbxqriaTqvFWe26LLPuvLsty6rNK9urXD\n31m5f4mfDIgRDy/hZi6TFTbWnLI3uC/aBcvEdWJk3ezJM55zgsvUJY5Oa9juXHEd\nbudZAkctO1OJddzd15OJ3NB2ETqzut2RfowOwOF/P5Z0N/GBcGFgYDIipQKBgGWM\nOQQISDBJHRtlmkMzK24SELYy+mqVGk/uag6mtnREzW016Pfo3Np8Sm+VTTGeGkCi\ncTAYOk79YGUWHqQfJk5hP/cvYLqrhTQ87BgTdw1K7VStj2WGA0ejW28WNR1GQfOQ\n+Jt9oN8cgrdD26sQ8Y+JZ2/0ET8Z4a7SxuwDtawdAoGAEkIfMLiCl7N4bb/tatQ6\ntDIuGzS3RtsFLaDGyM6J0F1vvGNlpLyahmbkDRoUQociAOW+u4priIhHhtRMdyNp\nDjgLHKzRcxbyZht7eZ9THT3FhtTnUgHKCHXB/Kpki4JSGMIrJVLQpHRWlBvekIIc\ngDuCvclJw2ciIweapOYjYqI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ik8tn@porteiroeletronico-sel0373.iam.gserviceaccount.com",
+  "client_id": "100957246996962838846",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ik8tn%40porteiroeletronico-sel0373.iam.gserviceaccount.com"
+}
