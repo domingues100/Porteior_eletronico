@@ -179,7 +179,6 @@ def liga_led(led):
     time.sleep(0.5)
     GPIO.output(led,GPIO.LOW)
 
-###############################################################################################
 def on_snapshot_callback(doc_snapshot, changes, read_time):
     for doc in doc_snapshot:
         if doc.exists:
@@ -192,14 +191,15 @@ def on_snapshot_callback(doc_snapshot, changes, read_time):
                 db.collection(u'token_cadastro').document('token_cadastro').set({u'token': 0})
             
             elif token == 2:
-                filename = doc_data.get('filename')
-                print(encodings_names)
+                nome = db.collection('token_cadastro').document('nome_pessoa')
+                nome = nome.get()
+                filename = nome.to_dict()["filename"]  
                 encodings_names.remove(filename)
                 encodings.pop(filename)
                 word=filename.split()
                 filename ="\ ".join(word)
                 os.system(f"rm -r /home/rasp/Porteiro_eletronico/cadastro/{filename}*")
-                db.collection(u'token_cadastro').document('token_cadastro').set({u'token': 0, u"filename": ""})
+                db.collection(u'token_cadastro').document('token_cadastro').set({u'token': 0})
                 
 def on_snapshot_callback2(doc_snapshot, changes, read_time):
     for doc in doc_snapshot:
@@ -213,7 +213,7 @@ def on_snapshot_callback2(doc_snapshot, changes, read_time):
                 liga_led(led_g)
         
 def b_callback(channel):
-    print("botao pressionado")
+    print("Requisicao entrada")
     file_name = captura_imagem(2,"") #usa a função captura a imagem
     url = upload_and_get_url(file_name) #usa a função de guardar a imagem e obter a url
     db.collection(u'request').document(f'{file_name}').set({u'nome': file_name , u'foto': url, u'date': datetime.now().strftime("%d/%m/%Y"), u'time': datetime.now().strftime("%H:%M:%S"), u'view': "false"})
@@ -234,7 +234,6 @@ firestore_watch_thread2 = threading.Thread(target=start_firestore_watch2)
 firestore_watch_thread.start()
 firestore_watch_thread2.start()
 GPIO.add_event_detect(button, GPIO.FALLING, callback=b_callback, bouncetime=300)
-###############################################################################################
 
 try:
     contador_exclusão = 0
@@ -261,12 +260,3 @@ try:
        
 except KeyboardInterrupt:
     GPIO.cleanup()
-
-#download_images()
-#print(reconhecimento())
-
-##########LINKS UTEIS##############
-#https://firebase.google.com/s/results/?q=db%20collection
-#https://firebase.google.com/docs/firestore/query-data/listen?hl=pt-br
-#https://firebase.google.com/docs/firestore/manage-data/add-data?hl=pt-br
-
